@@ -53,3 +53,15 @@ def right():
     wiringpi.digitalWrite(21, 1)
     sleep(SLEEP_TIME)
     wiringpi.digitalWrite(21, 0)
+
+
+def stop():
+    print("Stop!")
+    wiringpi.digitalWrite(21, 0)
+    wiringpi.digitalWrite(22, 0)
+    wiringpi.digitalWrite(23, 0)
+    wiringpi.digitalWrite(24, 0)
+    wiringpi.digitalWrite(25, 0)
+    wiringpi.digitalWrite(27, 0)
+    wiringpi.digitalWrite(28, 0)
+    wiringpi.digitalWrite(29, 0)
